@@ -1,44 +1,46 @@
-# Paranormal — tema horror per Omarchy.
+# Paranormal — a horror theme for Omarchy.
 #
-# colors.toml e' la sorgente: gli sfondi in backgrounds/ sono stati ricolorati
-# con questa palette, quindi non va richiesto a loro di derivarla — sarebbe
-# circolare. tools/gen_colors.py ricostruisce i colori in OKLCh, li riporta
-# nel gamut sRGB e verifica contrasti e rampa; gli sfondi servono solo come
-# controllo di famiglia.
+# The colours come from what paranormal, ghosts, asylum and horror actually
+# look like: cold dark, sickly light, bone, ectoplasm, rust and old paper.
 #
-#   - la rampa scende sotto il vuoto degli sfondi (Y~0.006): le finestre si
-#     perdono nel buio invece di staccarsi come un rettangolo.
-#   - l'accento e' l'unica accensione a 9.7:1 sul fondo.
-#   - rosso, giallo, arancio, magenta e maronio non esistono negli sfondi: sono
-#     eccezioni dichiarate, a cromo contenuto, perche' un terminale deve
-#     distinguere un errore da un avviso.
-#
-# Rigenera con:  python3 tools/gen_colors.py
+#   - the dark ramp drops below the wallpapers' own void, so windows sink into
+#     the image instead of sitting on top of it as a rectangle
+#   - the accent is the only light in the theme
+#   - the warm tones are aged and low-chroma; a terminal still has to tell an
+#     error from a warning, so they exist, but they never shout
+#   - nothing here is brighter than chroma 0.051
 
 mode = "dark"
 
-accent              = "#97c0c4"   # ectoplasma: la sola accensione
-selection           = "#183f42"   # superficie rialzata
-muted               = "#6b7576"   # foschia grigia
-background          = "#060a0a"   # nero freddo
-dark_background     = "#030606"   # ombra profonda
-darker_background   = "#020303"   # il vuoto dietro il vetro
-lighter_background  = "#0d1112"   # parete di cemento
-foreground          = "#c5cece"   # osso
-dark_foreground     = "#5c6565"   # commenti, scritte morte
-light_foreground    = "#8c9696"   # testo secondario
-bright_foreground   = "#ebefef"   # bianco apparizione
-red                 = "#845e5f"   # sangue coagulato  * eccezione
-yellow              = "#b3a381"   # cartagiande del reparto  * eccezione
-orange              = "#978867"   # lampada al tungsteno  * eccezione
-green               = "#6b907f"   # nebbia dell'asylum
-cyan                = "#729b9e"   # luce spettrale
-blue                = "#647e94"   # blu oltre il vetro
-magenta             = "#997483"   # viola livido  * eccezione
-brown               = "#736850"   # legno marcio  * eccezione
-bright_red          = "#bc9294"   # sangue fresco  * eccezione
-bright_yellow       = "#ddcdaa"   # pagina bruciata  * eccezione
-bright_green        = "#9dc5b3"   # mela marcia
-bright_cyan         = "#abd5d9"   # ectoplasma acceso
+accent              = "#97c0c4"   # ectoplasm: the only light
+selection           = "#183f42"   # raised surface
+muted               = "#6b7576"   # grey fog
+
+background          = "#060a0a"   # cold black
+dark_background     = "#030606"   # deep shade
+darker_background   = "#020303"   # the void behind the glass
+lighter_background  = "#0d1112"   # concrete wall
+
+foreground          = "#c5cece"   # bone
+dark_foreground     = "#5c6565"   # comments, dead text
+light_foreground    = "#8c9696"   # secondary text
+bright_foreground   = "#ebefef"   # apparition white
+
+red                 = "#845e5f"   # clotted blood          * exception
+yellow              = "#b3a381"   # ward paperwork         * exception
+orange              = "#978867"   # tungsten lamp          * exception
+green               = "#6b907f"   # asylum mist
+cyan                = "#729b9e"   # spectral light
+blue                = "#647e94"   # blue beyond the glass
+magenta             = "#997483"   # bruised violet         * exception
+brown               = "#736850"   # rotting wood           * exception
+
+bright_red          = "#bc9294"   # fresh blood            * exception
+bright_yellow       = "#ddcdaa"   # burnt page             * exception
+bright_green        = "#9dc5b3"   # rotten apple
+bright_cyan         = "#abd5d9"   # ectoplasm alight
 bright_blue         = "#9ebad2"   # moonlight
-bright_magenta      = "#cba4b3"   # rosa polipo  * eccezione
+bright_magenta      = "#cba4b3"   # polyp pink             * exception
+
+# * declared exception: the colour is not in the wallpapers. A terminal has to
+#   tell an error from a warning, so it exists — muted on purpose.
