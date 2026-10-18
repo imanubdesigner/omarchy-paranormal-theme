@@ -1,0 +1,7 @@
+.DS_Store
+Thumbs.db
+*~
+
+# working files, never part of the theme
+*.swp
+*.bak

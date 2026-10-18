@@ -1,0 +1,44 @@
+# Paranormal — tema horror per Omarchy.
+#
+# colors.toml e' la sorgente: gli sfondi in backgrounds/ sono stati ricolorati
+# con questa palette, quindi non va richiesto a loro di derivarla — sarebbe
+# circolare. tools/gen_colors.py ricostruisce i colori in OKLCh, li riporta
+# nel gamut sRGB e verifica contrasti e rampa; gli sfondi servono solo come
+# controllo di famiglia.
+#
+#   - la rampa scende sotto il vuoto degli sfondi (Y~0.006): le finestre si
+#     perdono nel buio invece di staccarsi come un rettangolo.
+#   - l'accento e' l'unica accensione a 9.7:1 sul fondo.
+#   - rosso, giallo, arancio, magenta e maronio non esistono negli sfondi: sono
+#     eccezioni dichiarate, a cromo contenuto, perche' un terminale deve
+#     distinguere un errore da un avviso.
+#
+# Rigenera con:  python3 tools/gen_colors.py
+
+mode = "dark"
+
+accent              = "#97c0c4"   # ectoplasma: la sola accensione
+selection           = "#183f42"   # superficie rialzata
+muted               = "#6b7576"   # foschia grigia
+background          = "#060a0a"   # nero freddo
+dark_background     = "#030606"   # ombra profonda
+darker_background   = "#020303"   # il vuoto dietro il vetro
+lighter_background  = "#0d1112"   # parete di cemento
+foreground          = "#c5cece"   # osso
+dark_foreground     = "#5c6565"   # commenti, scritte morte
+light_foreground    = "#8c9696"   # testo secondario
+bright_foreground   = "#ebefef"   # bianco apparizione
+red                 = "#925559"   # sangue coagulato  * eccezione
+yellow              = "#b4a37d"   # cartagiande del reparto  * eccezione
+orange              = "#9c8757"   # lampada al tungsteno  * eccezione
+green               = "#6b907f"   # nebbia dell'asylum
+cyan                = "#729b9e"   # luce spettrale
+blue                = "#647e94"   # blu oltre il vetro
+magenta             = "#a26f84"   # viola livido  * eccezione
+brown               = "#736850"   # legno marcio  * eccezione
+bright_red          = "#d1878b"   # sangue fresco  * eccezione
+bright_yellow       = "#e1cda1"   # pagina bruciata  * eccezione
+bright_green        = "#9dc5b3"   # mela marcia
+bright_cyan         = "#abd5d9"   # ectoplasma acceso
+bright_blue         = "#9ebad2"   # moonlight
+bright_magenta      = "#da9cb5"   # rosa polipo  * eccezione
