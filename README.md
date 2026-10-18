@@ -90,14 +90,9 @@ If you are the author of any of these works and would rather they weren't used t
 
 `Yaru-sage`. Change it by editing `icons.theme`.
 
-## Notes
+## Licenza
 
-The Omarchy theme format changes between versions: compare against an official theme in `~/.config/omarchy/themes/` and, if needed, add the per-app files (neovim, btop, vscode...).
-For the preview, take a screenshot of the desktop with the theme applied, save it as `preview.png`, then compress it:
-
-```bash
-magick preview.png -quality 95 -define webp:method=6 preview.webp
-```
+Distribuito sotto licenza [MIT](LICENSE).
 
 ---
 
