@@ -26,21 +26,18 @@ dark_foreground     = "#5c6565"   # comments, dead text
 light_foreground    = "#8c9696"   # secondary text
 bright_foreground   = "#ebefef"   # apparition white
 
-red                 = "#845e5f"   # clotted blood          * exception
-yellow              = "#b3a381"   # ward paperwork         * exception
-orange              = "#978867"   # tungsten lamp          * exception
+red                 = "#845e5f"   # clotted blood
+yellow              = "#b3a381"   # ward paperwork
+orange              = "#978867"   # tungsten lamp
 green               = "#6b907f"   # asylum mist
 cyan                = "#729b9e"   # spectral light
 blue                = "#647e94"   # blue beyond the glass
-magenta             = "#997483"   # bruised violet         * exception
-brown               = "#736850"   # rotting wood           * exception
+magenta             = "#997483"   # bruised violet
+brown               = "#736850"   # rotting wood
 
-bright_red          = "#bc9294"   # fresh blood            * exception
-bright_yellow       = "#ddcdaa"   # burnt page             * exception
+bright_red          = "#bc9294"   # fresh blood
+bright_yellow       = "#ddcdaa"   # burnt page
 bright_green        = "#9dc5b3"   # rotten apple
 bright_cyan         = "#abd5d9"   # ectoplasm alight
 bright_blue         = "#9ebad2"   # moonlight
-bright_magenta      = "#cba4b3"   # polyp pink             * exception
-
-# * declared exception: the colour is not in the wallpapers. A terminal has to
-#   tell an error from a warning, so it exists — muted on purpose.
+bright_magenta      = "#cba4b3"   # polyp pink
