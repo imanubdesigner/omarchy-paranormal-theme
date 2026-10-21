@@ -7,6 +7,12 @@ Cold black below the grey of the stock themes, bone-coloured text, a pale ectopl
   <img src="preview.webp" alt="Paranormal — preview" width="100%">
 </p>
 
+> **Wallpapers & copyright** — The artwork in this repository is not my own and is
+> not covered by the MIT license. The images come from public wallpaper sites,
+> mainly [wallhaven.cc](https://wallhaven.cc), and remain the property of their
+> original authors. If one of them is yours and you'd rather it weren't here,
+> [open an issue](../../issues) and I'll remove it immediately.
+
 ---
 
 ## 🎨 Palette
@@ -35,7 +41,7 @@ Everything else — terminals, Hyprland, btop, the Omarchy shell, Neovim, VS Cod
 ## 📦 Installation
 
 ```bash
-omarchy theme install https://codeberg.org/imanubdesigner/omarchy-paranormal-theme
+omarchy theme install https://github.com/imanubdesigner/omarchy-paranormal-theme
 omarchy theme set omarchy-paranormal-theme
 ```
 
@@ -78,15 +84,17 @@ Two passes:
 1. **Upscaled to 3840×2160.** The upscaling stretched the frames and left them thin at the edges, so the areas that came out empty were filled in by hand to rebuild what the originals had there.
 2. **Recoloured by hand** in Photoshop and Photocraft: every hue in the frame was mapped onto a colour from the theme palette.
 
-If you are the author of any of these works and would rather they weren't used this way, get in touch and I'll remove them, no discussion.
+If you are the author of any of these works and would rather they weren't used this way, [open an issue](../../issues) and I'll remove them, no discussion. No license is granted for these images: they remain the property of their authors.
 
 ## 🧩 Icons
 
 `Yaru-sage`. Change it by editing `icons.theme`.
 
-## Licenza
+## License
 
-Distribuito sotto licenza [MIT](LICENSE).
+Released under the [MIT License](LICENSE). The license covers the theme's code and
+configuration only: the wallpapers in `backgrounds/` remain the property of their
+authors and are not licensed here (see *Sources and credits*).
 
 ---
 
